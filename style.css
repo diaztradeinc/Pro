@@ -1,0 +1,71 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header.top-tabs {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  padding: 1rem;
+}
+.mode-switch button, .model-versions button {
+  background: #222;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+}
+button.active {
+  background: #FFD700;
+  color: #000;
+}
+.model-preview {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.model-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+.prompt-section {
+  padding: 1rem;
+}
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+}
+.aspect-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+footer.bottom-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: #000;
+  border-top: 1px solid #333;
+}
+footer .tab {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+footer .tab.active {
+  color: #FFD700;
+}

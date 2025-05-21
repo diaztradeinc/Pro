@@ -1,1 +1,53 @@
-<!DOCTYPE html><html><head><title>DreamFlux</title></head><body><h1>DreamFlux Home</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamFlux Create</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-tabs">
+    <div class="mode-switch">
+      <button class="active">Image</button>
+      <button>Video</button>
+    </div>
+    <nav class="model-versions">
+      <button class="active">SD1.5</button>
+      <button>SDXL</button>
+      <button>Flux</button>
+      <button>HiDream</button>
+      <button>SD3.5</button>
+    </nav>
+  </header>
+
+  <section class="model-preview">
+    <div class="canvas-mode">Canvas mode</div>
+    <div class="model-box">
+      <img src="https://modelfiles.ai-models.org/realistic/realistic-vision-v51-thumb.jpg" class="model-thumb"/>
+      <div class="model-name">Realistic Vision</div>
+    </div>
+  </section>
+
+  <main class="prompt-section">
+    <label>Prompt</label>
+    <textarea placeholder="What do you dream of?"></textarea>
+
+    <label>Negative Prompt</label>
+    <textarea placeholder="What do you want to exclude?"></textarea>
+
+    <div class="aspect-toggle">
+      <span>Aspect ratio</span>
+      <label><input type="checkbox" checked> 9:16</label>
+    </div>
+  </main>
+
+  <footer class="bottom-bar">
+    <button class="tab active">Text to Image</button>
+    <button class="tab">Image to Image</button>
+    <button class="tab">Inpaint</button>
+    <button class="tab">Outpaint</button>
+    <button class="tab">Settings</button>
+  </footer>
+</body>
+</html>
